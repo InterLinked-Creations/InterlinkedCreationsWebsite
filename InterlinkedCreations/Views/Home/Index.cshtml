@@ -1,8 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Loading - Interlinked Creations</title>
+    <link rel="stylesheet" href="~/css/main.css">
+    <link rel="icon" type="image/x-icon" href="~/logo.png">
+    <script src="~/js/main.js" defer></script>
+</head>
+<body>
+    <span id="loadingText" style="font-size: 10vw; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; color: white; font: bold 10vw 'Arial'; text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);">Loading</span>
+    <iframe id="mainframe" src="" style="display: none;"></iframe>
+    <div id="screenOverlay"></div>
+</body>
+</html>
