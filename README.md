@@ -7,6 +7,11 @@ This is going to be the website for my gaming platform start up company, Interli
 - [ ] Create the original UI. 
 - [ ] Integrate the account system
 - [ ] Integrate the chat feature
-And then continue work afterwards.
+And then continue farther work afterwards.
 
-By the looks of it, I may be on my own for this project. 👍
+### Built by SuperGamer001 (Alex Fischer)
+
+## Copyrights
+© Copyright 2025 Interlinked Creations, SuperGamer001 (Alex Fischer). All rights reserved.
+
+![ObjectShowTheInfamousObjectShowGIF](https://github.com/user-attachments/assets/34af991d-115b-4294-9154-d2a9ef64b22f)
