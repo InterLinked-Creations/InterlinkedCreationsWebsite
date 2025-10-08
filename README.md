@@ -1,4 +1,5 @@
-# InterlinkedCreations
+# Interlinked Creations (MVC Website)
+### Project built by SuperGamer001 (Alex Fischer)
 
 This is going to be the website for my gaming platform start up company, Interlinked Creations. It's kinda still in the planning phase, and I have not much to show for it...
 
@@ -8,8 +9,6 @@ This is going to be the website for my gaming platform start up company, Interli
 - [ ] Integrate the account system
 - [ ] Integrate the chat feature
 And then continue farther work afterwards.
-
-### Built by SuperGamer001 (Alex Fischer)
 
 ## Copyrights
 © Copyright 2025 Interlinked Creations, SuperGamer001 (Alex Fischer). All rights reserved.
