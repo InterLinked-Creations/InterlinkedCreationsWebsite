@@ -8,6 +8,7 @@ This is going to be the website for my gaming platform start up company, Interli
 - [x] Create the original UI. 
 - [ ] Integrate the account system
 - [ ] Integrate the chat feature
+
 And then continue farther work afterwards.
 
 ## Copyrights
