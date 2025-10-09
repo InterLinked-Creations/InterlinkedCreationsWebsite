@@ -52,12 +52,13 @@ window.mainFrame = {
     }
 }
 
+document.getElementById('mainframe').src = "App/Index";
+
+
 window.addEventListener('DOMContentLoaded', e => {
-    setTimeout(() => {window.mainFrame.page.shortcut('index.html');}, 250)
+    setTimeout(() => { window.mainFrame.page.shortcut('App/Home');}, 250)
 });
-
-document.getElementById('mainframe').src = "app/intro.html";
-
+    
 document.getElementById('mainframe').addEventListener('load', e => {
     mainFrame.html.style.display = 'block';
     document.getElementById('loadingText').style.display = 'none';  
