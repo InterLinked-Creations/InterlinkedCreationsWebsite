@@ -5,7 +5,7 @@ This is going to be the website for my gaming platform start up company, Interli
 
 ## Integration plan
 - [x] Integrate the iframe feature from the original <a href="https://github.com/InterLinked-Creations/website-skeleton">Skeleton site.</a>
-- [ ] Create the original UI. 
+- [x] Create the original UI. 
 - [ ] Integrate the account system
 - [ ] Integrate the chat feature
 And then continue farther work afterwards.
