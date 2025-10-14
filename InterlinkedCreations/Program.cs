@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using InterlinkedCreations.Models;
+using InterlinkedCreations.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,19 @@ builder.Services.AddControllersWithViews();
 // Add DbContext with SQL Server
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Add session support
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromHours(24);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+// Register authentication services
+builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 
@@ -22,6 +36,9 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+
+// Add session middleware
+app.UseSession();
 
 app.UseAuthorization();
 
