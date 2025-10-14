@@ -52,11 +52,11 @@ window.mainFrame = {
     }
 }
 
-document.getElementById('mainframe').src = "App/Index";
+
 
 
 window.addEventListener('DOMContentLoaded', e => {
-    setTimeout(() => { window.mainFrame.page.shortcut('App/Home');}, 250)
+    document.getElementById('mainframe').src = "App/Index";
 });
     
 document.getElementById('mainframe').addEventListener('load', e => {
